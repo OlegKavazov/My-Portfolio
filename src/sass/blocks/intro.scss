@@ -1,0 +1,157 @@
+@use "../base/variables.scss" as *;
+
+.intro {
+  background: $bg-1;
+  padding: 64px 0 128px 0;
+
+  &__first-title {
+    text-align: center;
+    font-size: 88px;
+    line-height: 115%;
+    color: $brand-2;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+    column-gap: 128px;
+    padding: 0 128px;
+  }
+
+  &__about-card {
+    border: 4px solid $white;
+    border-radius: 160px 0;
+    padding: 60px;
+    min-width: 320px;
+    box-shadow: -4px -4px 2px 0 $brand-1;
+    img {
+      margin: 0 auto;
+      border: 3px solid $brand-1;
+      border-radius: 20%;
+      width: 120px;
+    }
+  }
+
+  &__title {
+    margin-top: 16px;
+    text-align: center;
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+  }
+
+  &__sub-title {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 129%;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 32px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    svg {
+      width: 16px;
+      color: $brand-1;
+    }
+  }
+
+  &__list-text {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  &__tools {
+    display: flex;
+    margin-top: 16px;
+    gap: 16px;
+
+    li {
+      border-radius: 6px;
+      padding: 0px 6px;
+      background: $brand-1;
+
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 129%;
+      color: $bg-1;
+    }
+  }
+
+  &__info {
+    h2 {
+      font-size: 64px;
+      line-height: 113%;
+    }
+    p {
+      margin-top: 66px;
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 50px;
+
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+    text-transform: capitalize;
+  }
+
+  &__link-svg {
+    width: 24px;
+  }
+
+  &__skills {
+    border-radius: 80px;
+    padding: 48px 32px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background: $bg-2;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 48px;
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+      }
+    }
+    &-number {
+      font-family: $second-family;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 129%;
+      text-transform: capitalize;
+    }
+
+    &-descr {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+}

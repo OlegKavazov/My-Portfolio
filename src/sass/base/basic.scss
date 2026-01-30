@@ -1,0 +1,21 @@
+@use "../pxtorem.scss" as *;
+@use "./variables.scss" as *;
+
+body {
+  font-family: $font-family;
+  color: $white;
+}
+
+.container {
+  padding: 0 128px;
+}
+
+.colored {
+  color: $brand-1;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
