@@ -1,0 +1,45 @@
+@use "../base/variables.scss" as *;
+
+.about {
+  background: $bg-2;
+  padding: 128px 0;
+  &__wrapper {
+    display: flex;
+    margin-top: 128px;
+    align-items: center;
+    gap: 128px;
+    padding-left: 128px;
+  }
+
+  &__title {
+    width: fit-content;
+    border: 4px solid $brand-1;
+    border-radius: 40px 0;
+    padding: 16px 40px;
+    background: $bg-1;
+
+    font-size: 64px;
+    line-height: 113%;
+  }
+
+  &__text {
+    margin-top: 64px;
+    border-radius: 40px;
+    padding: 24px 40px;
+    width: 880px;
+    background: $bg-1;
+    font-family: $second-family;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+
+  &__greetings {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+    color: $brand-1;
+  }
+}
