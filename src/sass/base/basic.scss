@@ -6,6 +6,12 @@ body {
   color: $white;
 }
 
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 .container {
   padding: 0 128px;
 }
@@ -29,8 +35,78 @@ body {
   margin-top: 16px;
 }
 
-h2,
-h3 {
-  font-weight: 400;
-  text-transform: capitalize;
+.horizontal-line {
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 100%;
+  height: 12px;
+  color: $brand-1;
+}
+
+.title-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.html-bg {
+  background: $html;
+}
+.html {
+  color: $html;
+}
+
+.css-bg {
+  background: $css;
+}
+.css {
+  color: $css;
+}
+
+.js-bg {
+  background: $js;
+}
+.js {
+  color: $js;
+}
+
+.react-bg {
+  background: $react;
+}
+.react {
+  color: $react;
+}
+
+.scss-bg {
+  background: $scss;
+}
+.scss {
+  color: $scss;
+}
+
+.figma-bg {
+  background: $figma;
+}
+.figma {
+  color: $figma;
+}
+
+.netlify-bg {
+  background: $netlify;
+}
+.netlify {
+  color: $netlify;
+}
+
+.git-bg {
+  background: $git;
+}
+.git {
+  color: $git;
+}
+
+.github-bg {
+  background: $github;
+}
+.github {
+  color: $github;
 }
