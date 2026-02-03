@@ -1,0 +1,95 @@
+@use "../base/variables.scss" as *;
+
+.contact {
+  background: $bg-2;
+  padding: 64px 0;
+  &__title {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 64px;
+    line-height: 113%;
+    color: $brand-1;
+  }
+
+  &__subtitle {
+    margin-top: 16px;
+    font-family: $second-family;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+  }
+
+  &__title-wrapper {
+    margin: 0 auto;
+    margin-top: 102px;
+    width: fit-content;
+    border: 2px solid $brand-1;
+    border-radius: 32px 0;
+    padding: 16px 40px;
+    h3 {
+      font-family: $second-family;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 131%;
+      color: $brand-1;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 64px 128px;
+    margin: 0 auto;
+    margin-top: 64px;
+    width: 1120px;
+
+    .contact-group {
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      border-bottom: 1px solid $brand-2;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 113%;
+
+      label {
+        color: $brand-1;
+      }
+    }
+    &-name {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    &-email {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    &-message {
+      grid-column: 1/3;
+      grid-row: 2;
+    }
+    &-btn {
+      grid-column: 1/3;
+      grid-row: 3;
+      justify-self: center;
+
+      display: flex;
+      gap: 16px;
+      width: fit-content;
+      border-radius: 32px;
+      padding: 16px 32px;
+      background: $brand-1;
+
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      text-transform: capitalize;
+      color: $bg-1;
+
+      svg {
+        width: 22px;
+      }
+    }
+  }
+}
