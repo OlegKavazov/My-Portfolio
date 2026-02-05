@@ -5,7 +5,11 @@
 @use "./base/variables.scss";
 
 @use "./blocks/header.scss";
+@use "./blocks/footer.scss";
+
 @use "./blocks/intro.scss";
 @use "./blocks/about.scss";
 @use "./blocks/skills.scss";
 @use "./blocks/contact.scss";
+
+@use "./blocks/works.scss";
