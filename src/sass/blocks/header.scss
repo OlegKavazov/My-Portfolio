@@ -24,7 +24,7 @@
   }
 
   h1 {
-    // font-family: $second-family;
+    font-family: $second-family;
     font-weight: 500;
     font-size: 32px;
     line-height: 131%;
@@ -37,33 +37,134 @@
     gap: 32px;
   }
 
-  &__nav-list--social {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 32px;
-  }
-
   &__nav-item {
-    // font-family: $second-family;
+    font-family: $second-family;
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;
     text-transform: capitalize;
   }
 
-  &__nav-social-link {
+  &__social-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__social-link {
     display: flex;
     align-items: center;
   }
 
-  &__nav-social-img {
+  &__social-img {
     width: 32px;
     color: $brand-1;
   }
 
-  &__nav-social-text {
+  &__social-text {
     font-size: 16px;
     line-height: 125%;
+    text-transform: capitalize;
+  }
+}
+
+// Media 1600px
+@media (max-width: 1600px) {
+  .header {
+    &__social-text {
+      display: none;
+    }
+  }
+}
+
+// Media 1280px
+@media (max-width: 1280px) {
+  .header {
+    &__wrapper {
+      padding: 28px 0;
+    }
+  }
+}
+
+// Media 1024px
+@media (max-width: 1024px) {
+  .header {
+    &__wrapper {
+      padding: 28px 0;
+    }
+
+    &__logo {
+      width: 32px;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 125%;
+    }
+
+    &__nav-list--pages {
+      gap: 24px;
+    }
+
+    &__nav-item {
+      font-size: 20px;
+      line-height: 125%;
+    }
+
+    &__social-list {
+      gap: 24px;
+    }
+
+    &__social-img {
+      width: 28px;
+    }
+  }
+}
+
+// Media 768px
+@media (max-width: 768px) {
+  .header {
+    &__wrapper {
+      padding: 24px 0;
+    }
+
+    &__logo {
+      width: 28px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    &__nav-list--pages {
+      gap: 20px;
+    }
+
+    &__nav-item {
+      font-size: 16px;
+    }
+
+    &__social-list {
+      gap: 20px;
+    }
+  }
+}
+
+// Media 576px
+@media (max-width: 576px) {
+  .header {
+    &__wrapper {
+      padding: 20px 0;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    &__social {
+      display: none;
+    }
   }
 }

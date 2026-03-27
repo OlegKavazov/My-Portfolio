@@ -114,3 +114,17 @@ h3 {
 .github {
   color: $github;
 }
+
+// Media 1440px
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 clamp(64px, 40vw - 448px, 128px);
+  }
+}
+
+// Media 768px
+@media (max-width: 768px) {
+  .container {
+    padding: 0 clamp(24px, 13.88vw - 42.66px, 64px);
+  }
+}
