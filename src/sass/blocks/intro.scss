@@ -19,11 +19,16 @@
     padding: 0 128px;
   }
 
+  &__card-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   &__about-card {
     border: 4px solid $white;
     border-radius: 160px 0;
     padding: 48px;
-    min-width: 320px;
+    width: 320px;
     box-shadow: -4px -4px 2px 0 $brand-1;
     img {
       margin: 0 auto;
@@ -62,6 +67,7 @@
     align-items: center;
     gap: 8px;
     svg {
+      flex-shrink: 0;
       width: 16px;
       color: $brand-1;
     }
@@ -125,6 +131,7 @@
   }
 
   &__skills {
+    max-width: 220px;
     margin-left: 24px;
     border-radius: 80px;
     padding: 48px 32px;
@@ -154,6 +161,26 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 125%;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .intro {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__card-wrapper {
+      flex: 0 0 100%;
+    }
+
+    &__info {
+      flex: 1;
+    }
+
+    &__skills {
+      flex: 0 0 auto;
     }
   }
 }
