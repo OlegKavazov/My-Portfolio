@@ -122,6 +122,17 @@ h3 {
   }
 }
 
+// Media 1024px
+@media (max-width: 1024px) {
+  .mouse-icon {
+    display: none;
+  }
+
+  .vertikal-line {
+    display: none;
+  }
+}
+
 // Media 768px
 @media (max-width: 768px) {
   .container {
